@@ -36,7 +36,7 @@ Registeration Number : 212224220049
 ## MainActivity.java
 
 ```
-package com.example.lifeapplication;
+package com.example.lifecycleapplication;
 
 import android.os.Bundle;
 import android.widget.Toast;
@@ -101,9 +101,13 @@ public class MainActivity extends AppCompatActivity {
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HELLO WORLD!!!"
+        android:background="#7B1FA2"
+        android:backgroundTint="#FBC02D"
+        android:text="@string/welcome_message"
+        android:textAlignment="center"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -111,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
 ```
 
 ## OUTPUT
